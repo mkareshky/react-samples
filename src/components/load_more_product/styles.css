@@ -1,0 +1,16 @@
+.lmp-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.product-thumnail{
+    padding: 20px;
+    border: 1px solid black;
+}

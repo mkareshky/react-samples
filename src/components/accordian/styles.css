@@ -1,0 +1,11 @@
+.elements {
+    padding: 20px 0 0;
+    border: 3px #055e5e solid;
+}
+
+.content {
+    width: 250px;
+    height: 100px;
+    padding: 20px;
+    white-space: normal;
+}
