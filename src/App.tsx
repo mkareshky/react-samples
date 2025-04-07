@@ -13,6 +13,7 @@ import RandomColorGeneratorPage from './pages/RandomColorGenerator'
 import StarRatingPage from './pages/StarRating'
 import ImageSliderPage from './pages/ImageSlider'
 import LoadMoreProductPage from './pages/LoadMoreProduct'
+import TreeViewPage from './pages/TreeView'
 
 const App: React.FC = () => {
   return (
@@ -31,6 +32,7 @@ const App: React.FC = () => {
         <Route path='/star-rating' element={<StarRatingPage />} />
         <Route path='/image-slider' element={<ImageSliderPage />} />
         <Route path='/load-more-product' element={<LoadMoreProductPage />} />
+        <Route path='/tree-view' element={<TreeViewPage />} />
       </Routes>
     </Router>
   )

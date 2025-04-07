@@ -101,6 +101,8 @@ function Home() {
           <Link to="/image-slider">Go to Image Slider Page</Link>
           <br />
           <Link to="/load-more-product">Go to Load More Product Page</Link>
+          <br />
+          <Link to="/tree-view">Go to Tree View Page</Link>
         </div>
         <button onClick={() => { setCount((count) => count + 1); setName(count.toString()) }}>
           count is {count}

@@ -2,6 +2,7 @@
 // the framework that you use together with Suspense.
 // Normally, the caching logic would be inside a framework.
 
+import { MenuData } from "../components/tree_view/types";
 import { AccordionItem } from "../types/accordion";
 
 
@@ -135,10 +136,10 @@ export const accordionData: AccordionItem[] = [
   }
 ];
 
-export const menuData = [
+export const menuData: MenuData[] = [
   {
       label : 'Home',
-      to : '/'
+      to : '/',
   },
   {
       label : 'Profile',
