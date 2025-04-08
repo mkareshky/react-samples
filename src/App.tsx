@@ -14,6 +14,7 @@ import StarRatingPage from './pages/StarRating'
 import ImageSliderPage from './pages/ImageSlider'
 import LoadMoreProductPage from './pages/LoadMoreProduct'
 import TreeViewPage from './pages/TreeView'
+import QRCodePage from './pages/QRCodePage'
 
 const App: React.FC = () => {
   return (
@@ -33,6 +34,7 @@ const App: React.FC = () => {
         <Route path='/image-slider' element={<ImageSliderPage />} />
         <Route path='/load-more-product' element={<LoadMoreProductPage />} />
         <Route path='/tree-view' element={<TreeViewPage />} />
+        <Route path='/qr-code' element={<QRCodePage />} />
       </Routes>
     </Router>
   )

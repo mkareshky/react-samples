@@ -103,6 +103,10 @@ function Home() {
           <Link to="/load-more-product">Go to Load More Product Page</Link>
           <br />
           <Link to="/tree-view">Go to Tree View Page</Link>
+          <br />
+          <Link to="/qr-code">Go to QR Code Page</Link>
+          <br />
+          <br />
         </div>
         <button onClick={() => { setCount((count) => count + 1); setName(count.toString()) }}>
           count is {count}
