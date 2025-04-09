@@ -106,6 +106,8 @@ function Home() {
           <br />
           <Link to="/qr-code">Go to QR Code Page</Link>
           <br />
+          <Link to="/theme-switch">Go to Theme Switch Page</Link>
+          <br />
           <br />
         </div>
         <button onClick={() => { setCount((count) => count + 1); setName(count.toString()) }}>
