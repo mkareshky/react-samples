@@ -1,0 +1,13 @@
+.scroller-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.titlecontainer {
+    height: 100px;
+    color: #0c386f;
+    background-color: #61dafb;
+    text-align: center;
+    position: 'fixed';
+}
+

@@ -108,6 +108,8 @@ function Home() {
           <br />
           <Link to="/theme-switch">Go to Theme Switch Page</Link>
           <br />
+          <Link to="/scroll-indicator">Go to Scroll Indicator Page</Link>
+          <br />
           <br />
         </div>
         <button onClick={() => { setCount((count) => count + 1); setName(count.toString()) }}>
