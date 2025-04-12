@@ -17,6 +17,7 @@ import TreeViewPage from './pages/TreeView'
 import QRCodePage from './pages/QRCodePage'
 import ThemeSwitchPage from './pages/ThemeSwitch'
 import ScrollIndicatorPage from './pages/ScrollIndicator'
+import TabsPage from './pages/Tabs'
 
 const App: React.FC = () => {
   return (
@@ -39,6 +40,7 @@ const App: React.FC = () => {
         <Route path='/qr-code' element={<QRCodePage />} />
         <Route path='/theme-switch' element={<ThemeSwitchPage />} />
         <Route path='/scroll-indicator' element={<ScrollIndicatorPage />} />
+        <Route path='/tabs' element={<TabsPage />} />
       </Routes>
     </Router>
   )
