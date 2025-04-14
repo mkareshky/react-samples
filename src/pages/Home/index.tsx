@@ -112,6 +112,8 @@ function Home() {
           <br />
           <Link to="/tabs">Go to Tabs Page</Link>
           <br />
+          <Link to="/modal-popup">Go to Modal Popup Page</Link>
+          <br />
           <br />
         </div>
         <button onClick={() => { setCount((count) => count + 1); setName(count.toString()) }}>
