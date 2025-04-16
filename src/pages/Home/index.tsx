@@ -114,6 +114,8 @@ function Home() {
           <br />
           <Link to="/modal-popup">Go to Modal Popup Page</Link>
           <br />
+          <Link to="/gitHub-profile-finder">Go to GitHub Profile Finder Page</Link>
+          <br />
           <br />
         </div>
         <button onClick={() => { setCount((count) => count + 1); setName(count.toString()) }}>

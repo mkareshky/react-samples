@@ -19,6 +19,7 @@ import ThemeSwitchPage from './pages/ThemeSwitch'
 import ScrollIndicatorPage from './pages/ScrollIndicator'
 import TabsPage from './pages/Tabs'
 import ModalPopupPage from './pages/ModalPopup'
+import GitHubProfileFinderPage from './pages/GitHubProfileFinder'
 
 const App: React.FC = () => {
   return (
@@ -43,6 +44,7 @@ const App: React.FC = () => {
         <Route path='/scroll-indicator' element={<ScrollIndicatorPage />} />
         <Route path='/tabs' element={<TabsPage />} />
         <Route path='/modal-popup' element={<ModalPopupPage />} />
+        <Route path='/gitHub-profile-finder' element={<GitHubProfileFinderPage />} />
       </Routes>
     </Router>
   )
