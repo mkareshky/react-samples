@@ -20,6 +20,7 @@ import ScrollIndicatorPage from './pages/ScrollIndicator'
 import TabsPage from './pages/Tabs'
 import ModalPopupPage from './pages/ModalPopup'
 import GitHubProfileFinderPage from './pages/GitHubProfileFinder'
+import SearchAutocompletePage from './pages/SearchAutocomplete'
 
 const App: React.FC = () => {
   return (
@@ -45,6 +46,7 @@ const App: React.FC = () => {
         <Route path='/tabs' element={<TabsPage />} />
         <Route path='/modal-popup' element={<ModalPopupPage />} />
         <Route path='/gitHub-profile-finder' element={<GitHubProfileFinderPage />} />
+        <Route path='/search-autocomplete' element={<SearchAutocompletePage />} />
       </Routes>
     </Router>
   )

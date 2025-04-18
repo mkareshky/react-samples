@@ -116,6 +116,8 @@ function Home() {
           <br />
           <Link to="/gitHub-profile-finder">Go to GitHub Profile Finder Page</Link>
           <br />
+          <Link to="/search-autocomplete">Go to Search AutocompletePage Page</Link>
+          <br />
           <br />
         </div>
         <button onClick={() => { setCount((count) => count + 1); setName(count.toString()) }}>

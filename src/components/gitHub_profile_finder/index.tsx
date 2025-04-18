@@ -62,7 +62,7 @@ const GitHubProfileFinder = () => {
 
     if (error) return <div>{(error instanceof Error) ? <p>{error.message}</p> : <p>An error occurred</p>}</div>;
 
-    if (loading) return <p>Loading....</p>;
+    {loading && <p>{loading && 'Louding...'}</p>}
 
     return (
         <div>
