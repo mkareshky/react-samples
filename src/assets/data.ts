@@ -116,7 +116,7 @@ export const fetchUserData = (): Promise<{ name: string }> => {
 export const accordionData: AccordionItem[] = [
   {
     id: 1,
-    title: "What is TypeScript?",  
+    title: "What is TypeScript?",
     content: "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale."
   },
   {
@@ -138,63 +138,75 @@ export const accordionData: AccordionItem[] = [
 
 export const menuData: MenuData[] = [
   {
-      label : 'Home',
-      to : '/',
+    label: 'Home',
+    to: '/',
   },
   {
-      label : 'Profile',
-      to : '/profile',
-      children : [
+    label: 'Profile',
+    to: '/profile',
+    children: [
+      {
+        label: 'Detail',
+        to: 'detail',
+        children: [
           {
-              label : 'Detail',
-              to : 'detail',
-              children : [
-                  {
-                      label : 'Location',
-                      to : 'location'
-                  },
-                  {
-                      label : 'Email',
-                      to : 'email'
-                  }
-              ]
+            label: 'Location',
+            to: 'location'
           },
           {
-              label : 'Connections',
-              to : 'connections',
-              children : [
-                  {
-                      label : 'Friends',
-                      to : 'friends'
-                  }
-              ]
+            label: 'Email',
+            to: 'email'
           }
-      ]
+        ]
+      },
+      {
+        label: 'Connections',
+        to: 'connections',
+        children: [
+          {
+            label: 'Friends',
+            to: 'friends'
+          }
+        ]
+      }
+    ]
   },
   {
-      label : 'Settings',
-      to : '/settings',
-      children : [
+    label: 'Settings',
+    to: '/settings',
+    children: [
+      {
+        label: 'Account',
+        to: 'account'
+      },
+      {
+        label: 'Security',
+        to: '/security',
+        children: [
           {
-              label : 'Account',
-              to : 'account'
+            label: 'Login',
+            to: 'login'
           },
           {
-              label : 'Security',
-              to : '/security',
-              children : [
-                  {
-                      label : 'Login',
-                      to : 'login'
-                  },
-                  {
-                      label : 'Register',
-                      to : 'register'
-                  }
-              ]
+            label: 'Register',
+            to: 'register'
           }
-      ]
+        ]
+      }
+    ]
   }
 ]
 
-export default menuData
+const dummyApiResponse = {
+  qrcode: true,
+  accordian: true,
+  tabs: false,
+  star_rat: true
+}
+
+export const featureFlagDataServiceCall = () => {
+  return new Promise((resolve, reject) => {
+    if (dummyApiResponse) setTimeout(() => resolve(dummyApiResponse), 500);
+    else reject('Error');
+  })
+}

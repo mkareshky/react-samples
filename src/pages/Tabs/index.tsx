@@ -10,7 +10,7 @@ export interface TabContent {
     content: JSX.Element;
 }
 
-const tabContetnt: TabContent[] = [
+export const tabContetnt: TabContent[] = [
     {
         id: 1,
         label: 'Tab1',

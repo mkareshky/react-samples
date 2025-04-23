@@ -22,6 +22,8 @@ import ModalPopupPage from './pages/ModalPopup'
 import GitHubProfileFinderPage from './pages/GitHubProfileFinder'
 import SearchAutocompletePage from './pages/SearchAutocomplete'
 import TicTacToePage from './pages/TicTacToe'
+import ShowSelectedPage from './pages/ShowSelected'
+import ShowComponentsGlobalState from './contexts/ShowComponentContext'
 
 const App: React.FC = () => {
   return (
@@ -49,6 +51,12 @@ const App: React.FC = () => {
         <Route path='/gitHub-profile-finder' element={<GitHubProfileFinderPage />} />
         <Route path='/search-autocomplete' element={<SearchAutocompletePage />} />
         <Route path='/tic-tac-toe' element={<TicTacToePage />} />
+        <Route
+          path='/show-selected'
+          element={<ShowComponentsGlobalState>
+            <ShowSelectedPage />
+          </ShowComponentsGlobalState>}
+        />
       </Routes>
     </Router>
   )

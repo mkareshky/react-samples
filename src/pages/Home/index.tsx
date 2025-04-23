@@ -120,6 +120,8 @@ function Home() {
           <br />
           <Link to="/tic-tac-toe">Go to Tic Tac Toe Page</Link>
           <br />
+          <Link to="/show-selected">Go Show Selected Page</Link>
+          <br />
           <br />
         </div>
         <button onClick={() => { setCount((count) => count + 1); setName(count.toString()) }}>
