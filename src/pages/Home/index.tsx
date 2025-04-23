@@ -116,7 +116,9 @@ function Home() {
           <br />
           <Link to="/gitHub-profile-finder">Go to GitHub Profile Finder Page</Link>
           <br />
-          <Link to="/search-autocomplete">Go to Search AutocompletePage Page</Link>
+          <Link to="/search-autocomplete">Go to Search Autocomplete Page</Link>
+          <br />
+          <Link to="/tic-tac-toe">Go to Tic Tac Toe Page</Link>
           <br />
           <br />
         </div>
