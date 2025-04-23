@@ -5,6 +5,7 @@ import AccordianComponent from "../accordian";
 import QRCodeComponent from "../qr_code";
 import StarRatingComponent from "../star_rating";
 import TabsComponent from "../tabs";
+import './styles.css'
 
 
 const ShowSelected = () => {
@@ -38,7 +39,7 @@ const ShowSelected = () => {
     if (loading) return <h3>Loading...</h3>;
     return (
         <ShowComponentsGlobalState>
-            {componentsRender.map((item, index) => checkEnFlag(item.key) ? <div key={index}>{item.component}</div> : null)}
+            {componentsRender.map((item, index) => checkEnFlag(item.key) ? <div key={index} className="comp-container">{item.component}</div> : null)}
         </ShowComponentsGlobalState>
     )
 }
