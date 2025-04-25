@@ -24,6 +24,7 @@ import SearchAutocompletePage from './pages/SearchAutocomplete'
 import TicTacToePage from './pages/TicTacToe'
 import ShowSelectedPage from './pages/ShowSelected'
 import ShowComponentsGlobalState from './contexts/ShowComponentContext'
+import TestHooksPage from './pages/TestHooks'
 
 const App: React.FC = () => {
   return (
@@ -51,6 +52,7 @@ const App: React.FC = () => {
         <Route path='/gitHub-profile-finder' element={<GitHubProfileFinderPage />} />
         <Route path='/search-autocomplete' element={<SearchAutocompletePage />} />
         <Route path='/tic-tac-toe' element={<TicTacToePage />} />
+        <Route path='/test-hooks' element={<TestHooksPage />} />
         <Route
           path='/show-selected'
           element={<ShowComponentsGlobalState>
