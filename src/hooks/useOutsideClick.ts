@@ -10,7 +10,9 @@ interface Handler {
 const useOutsideClick = (ref: RefObject, handler: Handler) => {
     useEffect(() => {
         const listener = (event: MouseEvent | TouchEvent) => {
-            if (!ref.current || ref.current.contains(event.target as Node)) return;
+            if (!ref.current ||
+                ref.current.contains(event.target as Node) ||
+                (event.target as Element).closest('a, .ignore-outside-click')) return;
             return handler(event);
         };
         document.addEventListener('mousedown', listener);

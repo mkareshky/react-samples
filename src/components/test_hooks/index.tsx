@@ -2,12 +2,15 @@ import { useRef, useState } from "react";
 import { useFetchData } from "../../hooks/useFetchData";
 import { Product } from "../load_more_product";
 import useOutsideClick from "../../hooks/useOutsideClick";
+import useWindowResize from "../../hooks/useWindowResize";
 
 const TestHooks = () => {
 
     const ref = useRef(null);
 
     const [showContent, setShowContent] = useState(false);
+
+    const { width, hight } = useWindowResize();
 
     useOutsideClick(ref, () => setShowContent(false))
     const {
@@ -18,12 +21,16 @@ const TestHooks = () => {
 
     return (
         <div>
+            <div>
+                <b>Width: </b>{width}
+                <br />
+                <b>Hight: </b>{hight}
+            </div>
             <button onClick={() => setShowContent(true)}>Click to show products</button>
             {showContent ?
                 <div
                     ref={ref}
                     style={{
-                        position: 'absolute',
                         top: 50,
                         padding: '1rem',
                         backgroundColor: '#eee',
