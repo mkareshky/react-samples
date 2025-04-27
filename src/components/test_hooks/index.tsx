@@ -8,16 +8,28 @@ const TestHooks = () => {
 
     const ref = useRef(null);
 
+    const bottomRef = useRef(null);
+
     const [showContent, setShowContent] = useState(false);
 
     const { width, hight } = useWindowResize();
+
+    const handleMove = (status: boolean) => {
+
+        status ? (bottomRef.current && (bottomRef.current as HTMLElement)?.scrollIntoView({
+            behavior: 'smooth'
+        })) : window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
 
     useOutsideClick(ref, () => setShowContent(false))
     const {
         data,
         errorMsg,
         loading
-    }: { data: any, errorMsg: string, loading: boolean } = useFetchData('https://dummyjson.com/products');
+    }: { data: any, errorMsg: string, loading: boolean } = useFetchData('https://dummyjson.com/products?limit=100');
 
     return (
         <div>
@@ -40,7 +52,14 @@ const TestHooks = () => {
                 >
                     {errorMsg && <h3>{errorMsg}</h3>}
                     {loading && <h3>Loading...</h3>}
-                    {data && data.products && data.products.length && data.products.map((item: Product) => (<div key={item.id}>{item.title}</div>))}
+                    {data && data.products && data.products.length &&
+                        <div>
+                            <button onClick={() => handleMove(true)}>Bottom</button>
+                            {data.products.map((item: Product) => (<div key={item.id}>{item.title}</div>))}
+                            <button onClick={() => handleMove(false)}>Top</button>
+                            <div ref={bottomRef}></div>
+                        </div>
+                    }
                 </div> :
                 null
             }
