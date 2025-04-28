@@ -124,6 +124,8 @@ function Home() {
           <br />
           <Link to="/test-hooks">Go Show Test Hooks Page</Link>
           <br />
+          <Link to="/scroll-to-section">Go Scroll to section Page</Link>
+          <br />
           <br />
         </div>
         <button onClick={() => { setCount((count) => count + 1); setName(count.toString()) }}>
