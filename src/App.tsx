@@ -26,6 +26,7 @@ import ShowSelectedPage from './pages/ShowSelected'
 import ShowComponentsGlobalState from './contexts/ShowComponentContext'
 import TestHooksPage from './pages/TestHooks'
 import ScrollToSectionPage from './pages/ScrollToSection'
+import WeatherPage from './pages/Wearher'
 
 const App: React.FC = () => {
   return (
@@ -55,6 +56,7 @@ const App: React.FC = () => {
         <Route path='/tic-tac-toe' element={<TicTacToePage />} />
         <Route path='/test-hooks' element={<TestHooksPage />} />
         <Route path='/scroll-to-section' element={<ScrollToSectionPage />} />
+        <Route path='/weather' element={<WeatherPage />} />
         <Route
           path='/show-selected'
           element={<ShowComponentsGlobalState>

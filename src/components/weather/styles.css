@@ -1,0 +1,26 @@
+.weather-wrapper{
+    background-color: aqua;
+    color: black;
+    margin: 20px auto;
+    width: 700px;
+    height: 500px;
+    border: black solid 1px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.search-wrapper {
+    margin: 20px;
+}
+.search-wrapper input{
+    padding: 12px;
+    margin: 0 20px;
+    width: 70%;
+}
+
+.search-wrapper button{
+    padding: 10px 25px;
+    background-color: black;
+    color: azure;
+    font-weight: bold;
+}

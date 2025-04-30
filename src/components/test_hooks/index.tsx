@@ -24,7 +24,8 @@ const TestHooks = () => {
         })
     }
 
-    useOutsideClick(ref, () => setShowContent(false))
+    useOutsideClick(ref, () => setShowContent(false));
+    
     const {
         data,
         errorMsg,
